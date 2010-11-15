@@ -44,6 +44,7 @@ filetype indent on
 
 " Funny file extensions
 autocmd BufRead,BufNewFile *.spv setlocal filetype=php
+autocmd BufRead,BufNewFile *.phtml setlocal filetype=php
 autocmd BufRead,BufNewFile *.pxl setlocal filetype=python
 autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
 
@@ -104,5 +105,7 @@ noremap <C-Down>  <C-W><Down>
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
-" NERD_tree should ignore .pyc files
-let NERDTreeIgnore=['\.pyc$', '\~$']
+" Put extra local .vim files into ~/.vim/rc.d
+if isdirectory('rc.d/')
+	runtime! rc.d/*.vim
+endif
