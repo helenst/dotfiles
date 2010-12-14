@@ -12,9 +12,6 @@ export LSCOLORS="ExFxCxDxBxegedabagacad"
 # of course
 export EDITOR="vim"
 
-# I'm giving this a try.
-set -o vi
-
 
 #####################
 # HISTORY
