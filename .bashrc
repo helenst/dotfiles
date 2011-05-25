@@ -36,7 +36,7 @@ export HISTIGNORE="ls"
 # -I suppresses annoying messages about binary files.
 # --exclude-dir depends on grep >= 2.5.3
 # All older versions suck. TODO: Maybe put in a version test?
-export GREP_OPTIONS=" -I --exclude-dir=.svn"
+export GREP_OPTIONS=" -I --exclude-dir=.svn --color=auto"
 
 
 #####################
@@ -86,3 +86,20 @@ sshsock()
 {
 	export SSH_AUTH_SOCK=$(find /tmp/ssh-*/ -user $USER -name agent.* 2>/dev/null)
 }
+
+#
+#
+replace()
+{
+	grep -rl "$1" * | xargs sed -i "s/$1/$2/"
+}
+
+
+#####################
+# EXTERNALS
+#
+
+# Read in extra conf files from .bashrc.d
+if [ -d $HOME/.bashrc.d ]; then
+	for file in $HOME/.bashrc.d/*; do source $file; done
+fi
