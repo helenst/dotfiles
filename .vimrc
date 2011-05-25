@@ -10,8 +10,6 @@ set nu			" line numbering
 set ttymouse=xterm2		" allows mouse to work in screen sessions
 set mouse=a		" allow mouse support in console
 
-set bg=dark
-
 "
 " Searching
 "
@@ -52,7 +50,7 @@ autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
 autocmd FileType html,xml,xslt setlocal nowrap
 
 " Use spaces instead of tabs in python
-autocmd FileType python setlocal expandtab
+" autocmd FileType python setlocal expandtab
 
 syntax enable " syntax highlighting
 
@@ -105,7 +103,7 @@ noremap <C-Down>  <C-W><Down>
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
-" Put extra local .vim files into ~/.vim/rc.d
-if isdirectory('rc.d/')
-	runtime! rc.d/*.vim
-endif
+vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
+
+" Put extra local .vim files into ~/.vim/plugin and they will be loaded
+" automatically
