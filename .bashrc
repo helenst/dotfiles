@@ -39,7 +39,7 @@ export HISTIGNORE="ls"
 
 # coloured prompt and titlebar info
 TITLEBAR='\[\e]2;\h:\w\a\]'
-BASE_PS1="\[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\]\w\[\033[0m\]\$ "
+BASE_PS1="\[\033[0;32m\]\u@\H\[\033[0m\]:\[\033[0;36m\]\w\[\033[0m\]\$ "
 
 if [ "$TERM" = "linux" ]; then
     PS1="${BASE_PS1}"
