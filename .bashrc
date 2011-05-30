@@ -12,9 +12,6 @@ export LSCOLORS="ExFxCxDxBxegedabagacad"
 # of course
 export EDITOR="vim"
 
-# I'm giving this a try.
-set -o vi
-
 
 #####################
 # HISTORY
@@ -31,6 +28,12 @@ export HISTFILESISZE=$HISTSIZE
 
 # don't bother storing some stuff in history
 export HISTIGNORE="ls"
+
+# Do not grep .svn directories.
+# -I suppresses annoying messages about binary files.
+# --exclude-dir depends on grep >= 2.5.3
+# All older versions suck. TODO: Maybe put in a version test?
+export GREP_OPTIONS=" -I --exclude-dir=.svn"
 
 
 #####################
