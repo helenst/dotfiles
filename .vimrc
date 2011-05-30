@@ -88,6 +88,10 @@ map ,w :w <C-R>=expand("%:p:h") . "/" <CR>
 map ,sav :sav <C-R>=expand("%:p:h") . "/" <CR>
 map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
+" FuzzyFinder shortcut
+map ,f :FufFile **/<CR>
+map ,b :FufBuffer <CR>
+
 " Ctrl arrows to move between windows
 noremap <Esc>[1;5D <C-W><Left>
 noremap <Esc>[1;5C <C-W><Right>
