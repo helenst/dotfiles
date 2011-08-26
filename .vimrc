@@ -24,7 +24,7 @@ set autoindent      " auto indent on new line
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set noexpandtab       " use tabs by default
+set expandtab       " use spaces by default
 
 set formatoptions=ro " Enable automatic comment leaders
 
