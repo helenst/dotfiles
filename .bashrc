@@ -73,6 +73,10 @@ alias nc='rlwrap nc'
 # don't let vim try to connect to X server - it can slow the startup
 alias vim='vim -X'
 
+alias git-svn='git svn'
+
+
+
 
 #####################
 # FUNCTIONS
