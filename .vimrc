@@ -50,13 +50,17 @@ autocmd BufRead,BufNewFile *.spv setlocal filetype=php
 autocmd BufRead,BufNewFile *.phtml setlocal filetype=php
 autocmd BufRead,BufNewFile *.pxl setlocal filetype=python
 autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
+autocmd BufRead,BufNewFile *.html.dj setlocal filetype=htmldjango
+autocmd BufRead,BufNewFile *.less setlocal filetype=less
 
-" HTML / XML / XSL shouldn't be wrapped - makes it too hard to see indentation
-autocmd FileType html,xml,xslt setlocal nowrap
+
+" Smaller indentation on webby things
+autocmd FileType html,xml,xslt,htmldjango,css,less,scss,cucumber,ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
+" No wrapping on html type stuff, too hard to see indents
+autocmd FileType html,xml,xslt,htmldjango setlocal nowrap
 
 " Use spaces instead of tabs in python
-" autocmd FileType python setlocal expandtab
-
 syntax enable " syntax highlighting
 
 " ToDo keywords
@@ -97,6 +101,8 @@ map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
 map ,f :FufFile **/<CR>
 map ,b :FufBuffer <CR>
 
+let NERDTreeIgnore = ['\.pyc$']
+
 " Ctrl arrows to move between windows
 noremap <Esc>[1;5D <C-W><Left>
 noremap <Esc>[1;5C <C-W><Right>
@@ -114,5 +120,4 @@ vnoremap < <<CR>gv
 
 vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
 
-" Put extra local .vim files into ~/.vim/plugin and they will be loaded
-" automatically
+" Put extra local .vim files into ~/.vim/plugin and they will be loaded automatically
