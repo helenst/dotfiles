@@ -95,6 +95,14 @@ replace()
 	grep -rl "$1" * | xargs sed -i "s/$1/$2/"
 }
 
+# Run an SMTP debug server on localhost
+smtpdebug()
+{
+    sudo python -m smtpd -n -c DebuggingServer localhost:25
+}
+
+export PYTHONSTARTUP=$HOME/.pythonrc
+
 
 #####################
 # EXTERNALS
