@@ -35,6 +35,11 @@ set titleold=""
 " command line completion
 set wildmode=list:longest,full
 
+" fold level
+set foldmethod=indent
+set foldlevel=20
+set foldlevelstart=20
+
 
 " enable filetype plugins
 filetype plugin on
