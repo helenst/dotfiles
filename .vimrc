@@ -41,8 +41,9 @@ set foldmethod=indent
 set foldlevel=20
 set foldlevelstart=20
 
+" make tabs and trailing spaces visible
+set list listchars=tab:▷⋅,trail:⋅
 
-" enable filetype plugins
 filetype plugin on
 filetype indent on
 
