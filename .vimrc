@@ -108,7 +108,9 @@ map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
 map ,f :FufFile **/<CR>
 map ,b :FufBuffer <CR>
 
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeChDirMode=2
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 
 " Ctrl arrows to move between windows
 noremap <Esc>[1;5D <C-W><Left>
