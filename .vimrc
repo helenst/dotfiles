@@ -21,6 +21,7 @@ set incsearch	" search as you type
 " Tabbing
 "
 set autoindent      " auto indent on new line
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
