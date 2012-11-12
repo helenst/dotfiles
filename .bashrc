@@ -60,6 +60,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lal='ls -al'
 alias ltr='ls -ltr'
+alias nose='nosetests'
 
 # hex dumping
 alias hd='hexdump -C'
