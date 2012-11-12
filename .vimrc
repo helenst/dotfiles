@@ -62,7 +62,6 @@ autocmd FileType html,xml,xslt,htmldjango,css,less,scss,cucumber,ruby setlocal t
 " No wrapping on html type stuff, too hard to see indents
 autocmd FileType html,xml,xslt,htmldjango setlocal nowrap
 
-" Use spaces instead of tabs in python
 syntax enable " syntax highlighting
 
 " ToDo keywords
@@ -71,7 +70,7 @@ syn keyword pythonTodo contained TODO FIX FIXME XXX HACK
 
 " Python PEP8 checking - requires pep8.py somewhere in the $PATH
 " Control-P to run a PEP8 check on the current file...
-nnoremap <silent> <C-p> :cexpr system("pep8.py --repeat ".expand("%:p"))<CR>
+nnoremap <silent> <C-p> :cexpr system("pep8 --repeat ".expand("%:p"))<CR>
 " Then Control-J and Control-K to move between the 'errors'
 nnoremap <silent> <C-j> :cnext<CR>
 nnoremap <silent> <C-k> :cprevious<CR>
