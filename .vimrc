@@ -112,6 +112,14 @@ let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 
+" TagList Plugin Configuration
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_File_Fold_Auto_Close = 1
+
+set tags=tags;$HOME/.vim/tags/
+
 " Ctrl arrows to move between windows
 noremap <Esc>[1;5D <C-W><Left>
 noremap <Esc>[1;5C <C-W><Right>
