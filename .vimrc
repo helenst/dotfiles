@@ -78,7 +78,12 @@ nnoremap <silent> <C-k> :cprevious<CR>
 "
 " Function key mappings
 "
-nmap <silent> <F4> :set invhlsearch<CR> " Toggle search highlighting
+
+" Show/hide NERDTree
+map <F3> :NERDTreeToggle<CR>
+
+" Toggle search highlighting
+nmap <silent> <F4> :set invhlsearch<CR>
 
 " F5 toggles the invpaste setting - 
 " this stops auto-indentation going nuts when you paste stuff in terminal
@@ -87,7 +92,8 @@ imap <F5> <C-O><F5>
 set pastetoggle=<F5>
 
 nmap <silent> <F6> :set invlist<CR> " Toggle whitespace display
-            
+
+map <F7> :TlistToggle<CR>
 
 " Edit/save another file in the same directory as the current file
 " uses expression to extract path from current file's path
