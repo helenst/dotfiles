@@ -25,7 +25,7 @@ export HISTCONTROL="erasedups:ignoreboth"
 export HISTTIMEFORMAT="%F %T "
 
 # keep loads of history
-export HISTSIZE=5000
+export HISTSIZE=50000
 export HISTFILESISZE=$HISTSIZE
 
 # don't bother storing some stuff in history
