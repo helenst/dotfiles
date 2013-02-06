@@ -85,10 +85,12 @@ alias git-svn='git svn'
 # FUNCTIONS
 #
 
-# reset the ssh auth sock so agent continues to work
+# Reset the SSH auth socket so that public key auth can continue to be passed on to remote ssh connections.
+# This is useful when reattaching to a screen session - the ssh auth sock has changed, but the shell is old
+# so won't have picked up on it.
 sshsock()
 {
-	export SSH_AUTH_SOCK=$(find /tmp/ssh-*/ -user $USER -name agent.* 2>/dev/null)
+    export SSH_AUTH_SOCK=$(find /tmp/ssh-*/ -type s -printf '%T@ %p\n' -user $USER  | sort -n | tail -1 | cut -f2- -d" ")
 }
 
 #
