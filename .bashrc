@@ -12,6 +12,8 @@ export LSCOLORS="ExFxCxDxBxegedabagacad"
 # of course
 export EDITOR="vim"
 
+export PATH="$PATH:$HOME/usr/bin"
+
 
 #####################
 # HISTORY
