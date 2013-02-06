@@ -52,15 +52,13 @@ autocmd BufRead,BufNewFile *.spv setlocal filetype=php
 autocmd BufRead,BufNewFile *.phtml setlocal filetype=php
 autocmd BufRead,BufNewFile *.pxl setlocal filetype=python
 autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
-autocmd BufRead,BufNewFile *.html.dj setlocal filetype=htmldjango
 autocmd BufRead,BufNewFile *.less setlocal filetype=less
-
-
-" Smaller indentation on webby things
-autocmd FileType html,xml,xslt,htmldjango,css,less,scss,cucumber,ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.scss setlocal filetype=sass
+autocmd BufRead,BufNewFile *.pde set filetype=arduino
+autocmd BufRead,BufNewFile *.ino set filetype=arduino
 
 " No wrapping on html type stuff, too hard to see indents
-autocmd FileType html,xml,xslt,htmldjango setlocal nowrap
+autocmd FileType html,xml,xslt setlocal nowrap
 
 syntax enable " syntax highlighting
 
