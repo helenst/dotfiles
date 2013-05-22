@@ -108,6 +108,11 @@ smtpdebug()
 
 export PYTHONSTARTUP=$HOME/.pythonrc
 
+# Virtualenvwrapper stuff
+export WORKON_HOME=$HOME/.virtualenvs
+if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 #####################
 # EXTERNALS
