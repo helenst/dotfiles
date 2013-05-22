@@ -80,6 +80,10 @@ let g:pymode_utils_whitespaces = 0
 " Function key mappings
 "
 
+" F2 saves
+map <F2> :w<CR>
+imap <F2> <ESC>:w<CR>
+
 " Show/hide NERDTree
 map <F3> :NERDTreeToggle<CR>
 
