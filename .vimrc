@@ -73,6 +73,9 @@ nnoremap <silent> <C-p> :cexpr system("pep8 --repeat ".expand("%:p"))<CR>
 nnoremap <silent> <C-j> :cnext<CR>
 nnoremap <silent> <C-k> :cprevious<CR>
 
+" Don't let pymode autoedit whitespace
+let g:pymode_utils_whitespaces = 0
+
 "
 " Function key mappings
 "
