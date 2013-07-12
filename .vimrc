@@ -27,6 +27,20 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab       " use spaces by default
 
+" allow toggling between local and default mode
+function TabToggle()
+  if &expandtab
+    set shiftwidth=4
+    set softtabstop=0
+    set noexpandtab
+  else
+    set shiftwidth=4
+    set softtabstop=4
+    set expandtab
+  endif
+endfunction
+nmap <F9> mz:execute TabToggle()<CR>'z
+
 set formatoptions=ro " Enable automatic comment leaders
 
 " set the title of the terminal to the name of the file you are editing
