@@ -78,6 +78,10 @@ alias vim='vim -X'
 
 alias git-svn='git svn'
 
+# I am this good at typing.
+alias got='git'
+alias gut='git'
+alias gti='git'
 
 
 
