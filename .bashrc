@@ -126,3 +126,7 @@ fi
 if [ -d $HOME/.bashrc.d ]; then
 	for file in $HOME/.bashrc.d/*; do source $file; done
 fi
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
