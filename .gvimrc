@@ -1,6 +1,9 @@
 
 " tiny font
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 8
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+map <leader>- :set guifont=Bitstream\ Vera\ Sans\ Mono\ 9<cr>
+map <leader>+ :set guifont=Bitstream\ Vera\ Sans\ Mono\ 10<cr>
+
 
 " get rid of menu and toolbar clutter
 set guioptions-=T
