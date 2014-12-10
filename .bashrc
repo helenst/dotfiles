@@ -110,6 +110,16 @@ smtpdebug()
     sudo python -m smtpd -n -c DebuggingServer localhost:25
 }
 
+# delete swp files, useful if vim crashes
+rmswp() {
+    find . -name "*.swp" | xargs rm
+}
+
+# delete pyc files
+rmpyc() {
+    find . -name "*.pyc" | xargs rm
+}
+
 export PYTHONSTARTUP=$HOME/.pythonrc
 
 # Virtualenvwrapper stuff
