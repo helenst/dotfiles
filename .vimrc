@@ -90,6 +90,15 @@ nnoremap <silent> <C-k> :cprevious<CR>
 " Don't let pymode autoedit whitespace
 let g:pymode_utils_whitespaces = 0
 
+" Don't let pymode worry about long lines
+let g:pep8_ignore="E501,E226"
+let g:pymode_lint_ignore="E501,E226"
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_key = '<leader>b'
+" Don't show scratch window
+set completeopt-=preview
 "
 " Function key mappings
 "
