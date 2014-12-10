@@ -136,6 +136,12 @@ map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
 map ,f :FufFile **/<CR>
 map ,b :FufBuffer <CR>
 
+" python 3 print fixer
+map ,3 :s/\vprint\s+(.+)$/print(\1)/ <CR>
+
+" create an __init__.py in current NERDTree folder
+map ,i ma__init__.py<CR>
+
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp$']
