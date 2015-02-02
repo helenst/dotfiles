@@ -28,18 +28,20 @@ set softtabstop=4
 set expandtab       " use spaces by default
 
 " allow toggling between local and default mode
-function TabToggle()
-  if &expandtab
-    set shiftwidth=4
-    set softtabstop=0
-    set noexpandtab
-  else
-    set shiftwidth=4
-    set softtabstop=4
-    set expandtab
-  endif
-endfunction
-nmap <F9> mz:execute TabToggle()<CR>'z
+if !exists("*TabToggle")
+  function TabToggle()
+    if &expandtab
+      set shiftwidth=4
+      set softtabstop=0
+      set noexpandtab
+    else
+      set shiftwidth=4
+      set softtabstop=4
+      set expandtab
+    endif
+  endfunction
+  nmap <F9> mz:execute TabToggle()<CR>'z
+endif
 
 set formatoptions=ro " Enable automatic comment leaders
 
