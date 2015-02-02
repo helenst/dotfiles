@@ -75,6 +75,7 @@ autocmd BufRead,BufNewFile *.ino set filetype=arduino
 
 " No wrapping on html type stuff, too hard to see indents
 autocmd FileType html,xml,xslt setlocal nowrap
+autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2
 
 syntax enable " syntax highlighting
 
