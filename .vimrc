@@ -25,7 +25,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab       " use spaces by default
+set noexpandtab       " use spaces by default
 
 " allow toggling between local and default mode
 if !exists("*TabToggle")
@@ -75,7 +75,10 @@ autocmd BufRead,BufNewFile *.ino set filetype=arduino
 
 " No wrapping on html type stuff, too hard to see indents
 autocmd FileType html,xml,xslt setlocal nowrap
-autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2
+" Ruby uses 2 spaces
+autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Python uses 4 spaces
+autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 syntax enable " syntax highlighting
 
