@@ -110,6 +110,14 @@ smtpdebug()
     sudo python -m smtpd -n -c DebuggingServer localhost:25
 }
 
+# Run Python http server in current directory
+# (takes args, e.g. `pyhttp 9000` to run on port 9000)
+pyhttp()
+{
+#    python2 -m SimpleHTTPServer $@
+    python3 -m http.server $@
+}
+
 # delete swp files, useful if vim crashes
 rmswp() {
     find . -name "*.swp" | xargs rm
