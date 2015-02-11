@@ -154,7 +154,7 @@ map ,i ma__init__.py<CR>
 
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore = ['\.pyc$', '\.swp$']
+let NERDTreeIgnore = ['\.pyc$', '\.swp$', '^__pycache__$']
 
 " TagList Plugin Configuration
 let Tlist_Ctags_Cmd='/usr/bin/ctags'

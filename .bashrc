@@ -126,6 +126,7 @@ rmswp() {
 # delete pyc files
 rmpyc() {
     find . -name "*.pyc" | xargs rm
+    find . -name "__pycache__" | xargs rm -r
 }
 
 export PYTHONSTARTUP=$HOME/.pythonrc
