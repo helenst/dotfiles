@@ -25,7 +25,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set noexpandtab       " use spaces by default
+set noexpandtab       " use tabs by default
 
 " allow toggling between local and default mode
 if !exists("*TabToggle")
