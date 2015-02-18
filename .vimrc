@@ -70,15 +70,15 @@ autocmd BufRead,BufNewFile *.pxl setlocal filetype=python
 autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
 autocmd BufRead,BufNewFile *.less setlocal filetype=less
 autocmd BufRead,BufNewFile *.scss setlocal filetype=sass
-autocmd BufRead,BufNewFile *.pde set filetype=arduino
-autocmd BufRead,BufNewFile *.ino set filetype=arduino
+autocmd BufRead,BufNewFile *.pde setlocal filetype=arduino
+autocmd BufRead,BufNewFile *.ino setlocal filetype=arduino
 
 " No wrapping on html type stuff, too hard to see indents
 autocmd FileType html,xml,xslt setlocal nowrap
 " Ruby uses 2 spaces
-autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Python uses 4 spaces
-autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 syntax enable " syntax highlighting
 
