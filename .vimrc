@@ -72,6 +72,7 @@ autocmd BufRead,BufNewFile *.less setlocal filetype=less
 autocmd BufRead,BufNewFile *.scss setlocal filetype=sass
 autocmd BufRead,BufNewFile *.pde setlocal filetype=arduino
 autocmd BufRead,BufNewFile *.ino setlocal filetype=arduino
+autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 
 " No wrapping on html type stuff, too hard to see indents
 autocmd FileType html,xml,xslt setlocal nowrap
