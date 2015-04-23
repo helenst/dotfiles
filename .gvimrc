@@ -1,8 +1,13 @@
 
-" tiny font
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
-map <leader>- :set guifont=Bitstream\ Vera\ Sans\ Mono\ 9<cr>
-map <leader>+ :set guifont=Bitstream\ Vera\ Sans\ Mono\ 10<cr>
+" Make font larger and smaller
+" (see http://vim.wikia.com/wiki/Change_font_size_quickly for definitions)
+if exists("*LargerFont")
+	map <leader>+ :LargerFont<cr>
+endif
+
+if exists("*SmallerFont")
+	map <leader>- :SmallerFont<cr>
+endif
 
 
 " get rid of menu and toolbar clutter
