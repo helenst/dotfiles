@@ -74,12 +74,17 @@ autocmd BufRead,BufNewFile *.pde setlocal filetype=arduino
 autocmd BufRead,BufNewFile *.ino setlocal filetype=arduino
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 
-" No wrapping on html type stuff, too hard to see indents
-autocmd FileType html,xml,xslt setlocal nowrap
-" Ruby uses 2 spaces
-autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-" Python uses 4 spaces
+" HTML - 2 spaces. Also, no wrapping since lines get quite long but we want
+" indentation to be clear.
+autocmd FileType html,htmldjango,xml,xslt setlocal nowrap tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" CSS / SASS / LESS - 2 spaces
+autocmd FileType css,sass,less setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Ruby and javascript: 2 spaces
+autocmd FileType ruby,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Python: 4 spaces
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+" Markdown: wrap whole words
+autocmd FileType markdown setlocal nolist lbr formatoptions+=l
 
 syntax enable " syntax highlighting
 
