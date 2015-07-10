@@ -76,7 +76,7 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 
 " HTML - 2 spaces. Also, no wrapping since lines get quite long but we want
 " indentation to be clear.
-autocmd FileType html,htmldjango,xml,xslt setlocal nowrap tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType html,htmldjango,xml,xsd,xslt setlocal nowrap tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " CSS / SASS / LESS - 2 spaces
 autocmd FileType css,sass,less setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Ruby and javascript: 2 spaces
