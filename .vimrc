@@ -79,8 +79,10 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 autocmd FileType html,htmldjango,xml,xsd,xslt setlocal nowrap tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " CSS / SASS / LESS - 2 spaces
 autocmd FileType css,sass,less setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-" Ruby and javascript: 2 spaces
-autocmd FileType ruby,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Ruby: 2 spaces
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Javascript: 4 spaces
+autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " Python: 4 spaces
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " Markdown: wrap whole words
