@@ -68,6 +68,7 @@ autocmd BufRead,BufNewFile *.spv setlocal filetype=php
 autocmd BufRead,BufNewFile *.phtml setlocal filetype=php
 autocmd BufRead,BufNewFile *.pxl setlocal filetype=python
 autocmd BufRead,BufNewFile *.pxlt setlocal filetype=python
+autocmd BufRead,BufNewFile *.kv setlocal filetype=kivy
 autocmd BufRead,BufNewFile *.less setlocal filetype=less
 autocmd BufRead,BufNewFile *.scss setlocal filetype=sass
 autocmd BufRead,BufNewFile *.pde setlocal filetype=arduino
@@ -79,10 +80,10 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 autocmd FileType html,htmldjango,xml,xslt setlocal nowrap tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " CSS / SASS / LESS - 2 spaces
 autocmd FileType css,sass,less setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-" Ruby and javascript: 2 spaces
-autocmd FileType ruby,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" Various languages: 2 spaces
+autocmd FileType ruby,javascript,scala,erlang,haskell,clojure setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Python: 4 spaces
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType python,kivy setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " Markdown: wrap whole words
 autocmd FileType markdown setlocal nolist lbr formatoptions+=l
 
