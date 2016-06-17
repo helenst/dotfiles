@@ -1,3 +1,4 @@
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 
 " Make font larger and smaller
 " (see http://vim.wikia.com/wiki/Change_font_size_quickly for definitions)

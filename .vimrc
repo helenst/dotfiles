@@ -1,3 +1,15 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"execute pathogen#infect()
+
+Bundle 'gmarik/vundle'
+Bundle 'majutsushi/tagbar'
+
+filetype on
+
 scriptencoding utf-8
 
 set modeline	" enable modelines to be read
