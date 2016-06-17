@@ -129,6 +129,21 @@ rmpyc() {
     find . -name "__pycache__" | xargs rm -r
 }
 
+# Notify me when tests pass or fail
+test_notify() {
+	# Run whatever command is passed in
+	"$@"
+
+	# Notify with the result
+	if [ $? -eq 0 ]
+	then
+		notify-send "Tests passed" -i '/usr/share/icons/gnome/48x48/emotes/face-smile.png' -t 5000
+	else
+		notify-send "Tests failed" -i '/usr/share/icons/gnome/48x48/emotes/face-crying.png' -t 5000
+	fi
+}
+
+
 export PYTHONSTARTUP=$HOME/.pythonrc
 
 # Virtualenvwrapper stuff
