@@ -1,12 +1,19 @@
 set nocompatible
+" filetype must be off for vundle and pathogen
 filetype off
+
+"Set up vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"execute pathogen#infect()
-
+" Let vundle manage itself
 Bundle 'gmarik/vundle'
-Bundle 'majutsushi/tagbar'
+
+" Vundle plugins go here
+
+" Read Pathogen plugins
+call pathogen#infect()
+call pathogen#helptags()
 
 filetype on
 
@@ -93,7 +100,7 @@ autocmd FileType html,htmldjango,xml,xsd,xslt setlocal nowrap tabstop=2 shiftwid
 " CSS / SASS / LESS - 2 spaces
 autocmd FileType css,sass,less setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Various languages: 2 spaces
-autocmd FileType ruby,javascript,scala,erlang,haskell,clojure setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby,javascript,scala,erlang,haskell,clojure,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Python: 4 spaces
 autocmd FileType python,kivy setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " Markdown: wrap whole words
@@ -150,8 +157,6 @@ set pastetoggle=<F5>
 
 nmap <silent> <F6> :set invlist<CR> " Toggle whitespace display
 
-map <F7> :TlistToggle<CR>
-
 " Edit/save another file in the same directory as the current file
 " uses expression to extract path from current file's path
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -174,14 +179,6 @@ map ,i ma__init__.py<CR>
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '^__pycache__$']
-
-" TagList Plugin Configuration
-let Tlist_Ctags_Cmd='/usr/bin/ctags'
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_File_Fold_Auto_Close = 1
-
-set tags=tags;$HOME/.vim/tags/
 
 " Ctrl arrows to move between windows
 noremap <Esc>[1;5D <C-W><Left>
