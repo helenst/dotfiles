@@ -133,6 +133,9 @@ let g:pymode_breakpoint_key = '<leader>b'
 " I just don't trust rope anymore.
 let g:pymode_rope = 0
 
+" Use vim-signify for hg (for git, we have git-gutter)
+let g:signify_vcs_list = ['hg']
+
 " Don't show scratch window
 set completeopt-=preview
 "
