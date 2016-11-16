@@ -1,19 +1,38 @@
 set nocompatible
-" filetype must be off for vundle and pathogen
+" filetype must be off for vundle
 filetype off
 
-"Set up vundle
+" Set up vundle
+" Do this first:
+" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Let vundle manage itself
-Bundle 'gmarik/vundle'
-
+" ~~~~~~~~~~~~~~~~~~~~~~
 " Vundle plugins go here
+" ~~~~~~~~~~~~~~~~~~~~~~
 
-" Read Pathogen plugins
-call pathogen#infect()
-call pathogen#helptags()
+" Let vundle manage itself
+Plugin 'gmarik/vundle'
+
+Plugin 'editorconfig/editorconfig-vim'
+
+" File navigation
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'scrooloose/nerdtree'
+
+" Python integration
+Plugin 'klen/python-mode'
+Plugin 'tclem/vim-arduino'
+
+" Ruby linting
+Plugin 'ngmy/vim-rubocop'
+
+" Source control integration
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-signify'
 
 filetype on
 
