@@ -34,6 +34,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-signify'
 
+" Colors!
+Plugin 'flazz/vim-colorschemes'
+
+" Font size adjustment
+Plugin 'drmikehenry/vim-fontsize'
+
 filetype on
 
 scriptencoding utf-8
