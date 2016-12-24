@@ -225,4 +225,8 @@ vnoremap < <<CR>gv
 
 vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
 
+" colorscheme. I use dark terminals so this works for me!
+set background=dark
+colorscheme vividchalk
+
 " Put extra local .vim files into ~/.vim/plugin and they will be loaded automatically
