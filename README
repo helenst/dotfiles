@@ -1,7 +1,11 @@
 These are my vim and bash setups.
 
-I mainly wanted to keep them under source control as I keep having to shift 
-them around between different machines and ended up constantly emailing them 
-to myself. But I figured it's also nice to share. :-)
+I keep them here so I can easily set up new machines with my preferred setup. I don't know if it's useful to anyone but me.
 
-Sets itself up (symlinks etc) by running setup.sh
+Set up as follows. I advise reading setup.sh before you do this. It does stuff I want, it may not do stuff you want.
+
+```bash
+git clone git@github.com:helenst/dotfiles.git
+cd dotfiles/
+./setup.sh
+```
