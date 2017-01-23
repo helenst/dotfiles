@@ -83,6 +83,8 @@ alias got='git'
 alias gut='git'
 alias gti='git'
 
+# ack installs as ack-grep
+alias ack='ack-grep'
 
 
 #####################
