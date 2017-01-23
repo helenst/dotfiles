@@ -1,7 +1,0 @@
-These are my vim and bash setups.
-
-I mainly wanted to keep them under source control as I keep having to shift 
-them around between different machines and ended up constantly emailing them 
-to myself. But I figured it's also nice to share. :-)
-
-Sets itself up (symlinks etc) by running setup.sh
