@@ -163,6 +163,10 @@ let g:signify_vcs_list = ['hg']
 
 " Don't show scratch window
 set completeopt-=preview
+
+" No, really don't create a new pane.
+let g:pymode_lint_cwindow = 0
+
 "
 " Function key mappings
 "
