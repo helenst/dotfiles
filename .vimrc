@@ -155,6 +155,10 @@ let g:pymode_lint_ignore="E501,E226"
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_key = '<leader>b'
 
+" It should pick up on ipdb if present, but doesn't always find it (e.g. not
+" started from the right virtualenv etc)
+let g:pymode_breakpoint_cmd = 'import ipdb; ipdb.set_trace()'
+
 " I just don't trust rope anymore.
 let g:pymode_rope = 0
 
