@@ -18,3 +18,6 @@ set guioptions-=l
 set guioptions-=r
 set guioptions-=L
 set guioptions-=R
+
+" nice bright highlights
+hi Search guibg=yellow guifg=black
