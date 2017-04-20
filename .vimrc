@@ -40,6 +40,10 @@ Plugin 'flazz/vim-colorschemes'
 " Font size adjustment
 Plugin 'drmikehenry/vim-fontsize'
 
+" session management
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+
 filetype on
 
 scriptencoding utf-8
@@ -236,5 +240,9 @@ vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
 " colorscheme. I use dark terminals so this works for me!
 set background=dark
 colorscheme vividchalk
+
+" Auto save/load sessions
+let g:session_autosave="yes"
+let g:session_autoload="yes"
 
 " Put extra local .vim files into ~/.vim/plugin and they will be loaded automatically
