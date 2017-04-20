@@ -216,6 +216,9 @@ map ,3 :s/\vprint\s+(.+)$/print(\1)/ <CR>
 " create an __init__.py in current NERDTree folder
 map ,i ma__init__.py<CR>
 
+" switch gitgutter on and off
+map ,g :GitGutterToggle<CR>
+
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.pyc$', '\.swp$', '^__pycache__$']
