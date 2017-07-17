@@ -242,7 +242,13 @@ vnoremap ;rv c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
 
 " colorscheme. I use dark terminals so this works for me!
 set background=dark
-colorscheme vividchalk
+
+
+try
+	colorscheme vividchalk
+catch /^Vim\%((\a\+)\)\=:E185/
+	" doesn't matter
+endtry
 
 " Auto save/load sessions
 let g:session_autosave="yes"
