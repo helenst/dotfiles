@@ -18,8 +18,8 @@ fi" >> $BASHRC_FILE
 # Symlink vimrc files to home dir
 #
 
-ln -s ~/dotfiles/.vimrc ~
-ln -s ~/dotfiles/.gvimrc ~
+ln -sf ~/dotfiles/.vimrc ~
+ln -sf ~/dotfiles/.gvimrc ~
 
 #
 # Install vundle
