@@ -31,6 +31,11 @@ if [ ! -d $VUNDLE_DIR ]; then
 fi
 
 #
-# Install vim plugins using Vundle
+# Install vim plugins using Vundle (Do things headlessly if not a terminal)
 #
-vim +PluginInstall +qall
+if [ -t 1 ]
+then
+	vim +PluginInstall +qall
+else
+	vim -E -s +PluginInstall +qall
+fi
