@@ -252,6 +252,6 @@ endtry
 
 " Auto save/load sessions
 let g:session_autosave="yes"
-let g:session_autoload="yes"
+let g:session_autoload="no"
 
 " Put extra local .vim files into ~/.vim/plugin and they will be loaded automatically
